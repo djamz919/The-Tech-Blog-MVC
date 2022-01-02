@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/djamz919/The-Tech-Blog-MVC/issues"
   },
-  "homepage": "https://github.com/djamz919/The-Tech-Blog-MVC#readme"
+  "homepage": "https://github.com/djamz919/The-Tech-Blog-MVC#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
