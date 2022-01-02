@@ -38,9 +38,10 @@ button:hover {
   background-color: #3486eb;
 }
 
-.post-list {
+.post-list, ol {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 textarea, input {
@@ -143,8 +144,7 @@ main {
 
 .toSignup a, .toLogin a {
   padding: 5px;
-  color: #ffffff;
-  background-color: #636363;
+  color: blue;
 }
 
 .btn-no-style {
@@ -176,12 +176,26 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: 2px solid #222222;
 }
 
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
+.cardHeader h3 {
+  font-size: x-large;
+  margin: 0;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #222222;
+  color: #999999;
+  padding: 10px 20px;
+}
+
+.content {
+  padding: 10px 20px;
+  color: #222222;
 }
 
 .edit-link {
@@ -210,6 +224,17 @@ main {
 
 .new-post-form input {
   width: 300px;
+}
+
+.newPost {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.newPostBtn {
+  font-size: x-large;
+  background-color: #222222;
 }
 
 .edit-post-form {
