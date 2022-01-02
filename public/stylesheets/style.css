@@ -7,18 +7,20 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: white;
+  background-color: #cae4c9;
 }
 
-a {
+a, #logout {
   text-decoration: none;
-  color: #225ca3;
+  color: #cae4c9;
   font-weight: bold;
   transition: color .1s;
+  font-weight: 300;
 }
 
-a:hover {
-  color: #3486eb;
+a:hover, #logout:hover {
+  color: #ffffff;
 }
 
 button {
@@ -68,27 +70,81 @@ form label {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
+  background-color: #222222;
 }
 
-header h1 {
-  font-size: 1em;
+header nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 0 30px 30px;
+}
+
+h1 a{
+  border-radius: 10px;
+  padding: 3px 15px;
+  background-color: #cae4c9;
+  color: #222222;
+  font-weight:800;
+  box-shadow: 5px 5px #8a978a;
+}
+
+nav a {
+  padding: 20px 30px;
 }
 
 main {
   flex: 1;
   padding: 2% 4%;
+}
+
+/* Login and Signup */
+
+.login-form, .signup-form {
+  border: 2px solid #222222;
+}
+
+.login-form h2, .signup-form h2 {
+  background-color: #222222;
+  padding: 5px 15px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.login-input, .signup-input{
+  margin: 0;
+  padding: 7.5px 15px;
+  color: #222222;
+  font-weight: 300;
+}
+
+.login-form div input, .signup-form div input {
+  width: 100%;
+}
+
+.login-form div button, .signup-form div button {
+  width: 100%;
+  background-color: #636363;
+}
+
+.toSignup, .toLogin {
+  padding: 7.5px 15px 15px 15px;
+  margin: 0;
+}
+
+.toSignup a, .toLogin a {
+  padding: 5px;
+  color: #ffffff;
+  background-color: #636363;
 }
 
 .btn-no-style {
@@ -131,15 +187,6 @@ main {
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
 }
 
 .comment-form {
