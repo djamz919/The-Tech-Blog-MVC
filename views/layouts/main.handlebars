@@ -22,7 +22,11 @@
       </nav>
       <div>
         <h1>
+          {{#if loggedIn}}
+          <a href="/">Your Dashboard</a>
+          {{else}}
           <a href="/">The Tech Blog</a>
+          {{/if}}
         </h1>
       </div>
     </header>

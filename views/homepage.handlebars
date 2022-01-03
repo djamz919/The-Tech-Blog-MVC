@@ -1,7 +1,8 @@
 <ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
+    {{#each posts as |post|}}
+    <li>
+      <a href="/dashboard/comment/{{post.id}}" class="add-comment">{{> post-info post}}</a>
+    </li>
+    {{/each}}
 </ol>
+

@@ -128,7 +128,7 @@ main {
   font-weight: 300;
 }
 
-.login-form div input, .signup-form div input {
+.login-form div input, .signup-form div input, .edit-post-form input {
   width: 100%;
 }
 
@@ -163,14 +163,6 @@ main {
 .btn-no-style:hover {
   background: none;
   color: #3486eb;
-}
-
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
 }
 
 .post {
@@ -222,8 +214,18 @@ main {
   opacity: .6;
 }
 
-.new-post-form input {
-  width: 300px;
+.new-post-form div, .edit-post-form div {
+  padding: 5px 20px;
+  margin: 0;
+}
+
+.new-post-form div input {
+  width: 100%;
+}
+
+.new-post-form button, .edit-post-form button {
+  width: 100%;
+  background-color: #636363;
 }
 
 .newPost {
@@ -237,8 +239,20 @@ main {
   background-color: #222222;
 }
 
-.edit-post-form {
-  margin-bottom: 5%;
+.newPostBtn a {
+  color: white;
+}
+
+/* .delete-post-btn, .update-post-btn {
+  margin: 5px 20px;
+} */
+
+.new-post-form label, .edit-post-form label {
+  color: black;
+}
+
+#post-url {
+  line-height: 300%;
 }
 
 footer {

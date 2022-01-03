@@ -1,6 +1,6 @@
 {{#if posts.length}}
 <section>
-  <ol>
+  <ol class="post-list">
     {{#each posts as |post|}}
     <li>
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">{{> post-info post}}</a>
@@ -15,4 +15,3 @@
     <a href="/dashboard/new-post">+ New Post</a>
   </button>
 </div>
-
