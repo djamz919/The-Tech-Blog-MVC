@@ -108,9 +108,9 @@ main {
   padding: 2% 4%;
 }
 
-/* Login and Signup */
+/* Card formattings for forms and comments */
 
-.login-form, .signup-form {
+.login-form, .signup-form, .comment-form, .comment {
   border: 2px solid #222222;
 }
 
@@ -185,6 +185,11 @@ main {
   padding: 10px 20px;
 }
 
+.cardHeader-comment {
+  height: 30px;
+  background-color: #222222;
+}
+
 .content {
   padding: 10px 20px;
   color: #222222;
@@ -200,30 +205,31 @@ main {
 }
 
 .comment {
-  padding: 1%;
+  margin-bottom: 5%;
+}
+
+.comment-text, .comment-meta {
+  margin-top: 1%;
   margin-bottom: 1%;
+  padding-left: 20px;
+  color: #222222;
 }
 
-.comment:nth-child(odd) {
-  background-color: #fff5eb;
-}
-
-.comment .meta {
-  font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
-}
-
-.new-post-form div, .edit-post-form div {
+.new-post-form div, .edit-post-form div, .comment-form div {
   padding: 5px 20px;
   margin: 0;
 }
 
-.new-post-form div input {
+.new-post-form div input, .comment-form div textarea {
   width: 100%;
 }
 
-.new-post-form button, .edit-post-form button {
+.comment-form div p {
+  color: #222222;
+  margin-bottom: 0;
+}
+
+.new-post-form button, .edit-post-form button, .comment-form button {
   width: 100%;
   background-color: #636363;
 }
@@ -243,22 +249,10 @@ main {
   color: white;
 }
 
-/* .delete-post-btn, .update-post-btn {
-  margin: 5px 20px;
-} */
-
 .new-post-form label, .edit-post-form label {
   color: black;
 }
 
 #post-url {
   line-height: 300%;
-}
-
-footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
 }

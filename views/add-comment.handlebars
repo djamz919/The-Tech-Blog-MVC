@@ -4,16 +4,19 @@
     </li>
 </ol>
 
+{{> comments post.comments}}
+
 <form class="comment-form">
+  <div class="cardHeader-comment"></div>
+  
   <div>
+    <p>Comment</p>
     <textarea name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button class="addCommentBtn" type="submit">Submit</button>
   </div>
 </form>
-
-{{> comments post.comments}}
 
 <script src="/javascript/comment.js"></script>

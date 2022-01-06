@@ -11,9 +11,12 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
   secret: 'Soli Deo gloria',
-  cookie: {maxAge: 3600000}, //timeout after 30 minutes
+  cookie: { maxAge: 3600000 }, //timeout after 30 minutes
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
 };
 
 app.use(session(sess));
