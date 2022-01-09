@@ -1,7 +1,7 @@
 # The-Tech-Blog
 
 ## Description
-This application presents the current day's typical work hours from 9 a.m. to 5 p.m. The user can enter tasks, notes, or memos in the text description of each hour's row to help plan their work day. It takes advantage of moment.js to dynamically to display past, present, and future hours. 
+This application is a blog that allows users to create an account where they can create, edit, and view posts about technology. Additionally, when logged in, users can comment on any posts in the homepage.
 
 ## Table of Contents
   * [Installation](#installation)
@@ -9,12 +9,22 @@ This application presents the current day's typical work hours from 9 a.m. to 5 
   * [Questions](#questions)
 
 ## Installation
-To install any dependencies run: npm install.
+To install any dependencies run: npm install. 
+
+If ran locally, be sure to create a .env file in the same directory as the index.js file and populate the .env file with the DB_NAME, DB_USER, and DB_PW. Also be sure to source the schema using the terminal and populate the tables with the seeds by running npm run seed. Run the program by entering the command node server.js in your CLI.
 
 ## Usage
-This application can be accessed via the following [Github pages link.](https://djamz919.github.io/work-day-scheduler/) Past hours are displayed with a gray block. Current hours are displyaed with a red block. Future hours are displayed with a green block. To save a task, note, or memo, simply click on the block associated with that hour, type some text and click on the save icon button to save it. The application will save it to your local storage so it can always be accessed even if you close or refresh the web page. To delete, simply click on the text field again, remove the text and save.
+This application can be accessed via the following [Heroku app.](https://fast-coast-84513.herokuapp.com/) or run locally (see installation above for instructions).
 
-![Screenshot of Work Day Scheduler Homepage](images/work-day-scheduler.png)
+To be able to add posts or comments, simply login or signup.
+
+To navigate to the login page, simply click login in the navigation bar at the top of the page: 
+![Screenshot of Login Page](public/images/login.png)
+
+If you do not have an account yet, click on "Sign up instead" in the login page to create an account:
+![Screenshot of Signup Page](public/images/signup.png)
+
+Once logged in, you can add posts by clicking on the "+ New Post" button in the dashboard:
 
 ## Questions
 For any questions, reach out to github.com/djamz919 via the following email address: djtm97@gmail.com.
