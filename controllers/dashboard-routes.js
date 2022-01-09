@@ -122,7 +122,7 @@ router.get('/comment/:id', withAuth, (req, res) => {
     });
 });
 
-router.get('/dashboard/new-post', (req,res) => {
+router.get('/new-post', withAuth, (req,res) => {
   res.render('new-post');
 })
 
