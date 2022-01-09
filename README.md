@@ -14,7 +14,7 @@ To install any dependencies run: npm install.
 If ran locally, be sure to create a .env file in the same directory as the index.js file and populate the .env file with the DB_NAME, DB_USER, and DB_PW. Also be sure to source the schema using the terminal and populate the tables with the seeds by running npm run seed. Run the program by entering the command node server.js in your CLI.
 
 ## Usage
-This application can be accessed via the following [Heroku app.](https://fast-coast-84513.herokuapp.com/) or run locally (see installation above for instructions).
+This application can be accessed via the following [Heroku app.](https://the-tech-blog-mvc.herokuapp.com/) or run locally (see installation above for instructions).
 
 To be able to add posts or comments, simply login or signup.
 
