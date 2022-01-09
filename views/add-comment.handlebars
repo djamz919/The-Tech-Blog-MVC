@@ -6,6 +6,7 @@
 
 {{> comments post.comments}}
 
+{{#if loggedIn}}
 <form class="comment-form">
   <div class="cardHeader-comment"></div>
   
@@ -18,5 +19,6 @@
     <button class="addCommentBtn" type="submit">Submit</button>
   </div>
 </form>
+{{/if}}
 
 <script src="/javascript/comment.js"></script>
