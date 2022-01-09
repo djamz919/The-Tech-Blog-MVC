@@ -25,6 +25,15 @@ If you do not have an account yet, click on "Sign up instead" in the login page 
 ![Screenshot of Signup Page](public/images/signup.png)
 
 Once logged in, you can add posts by clicking on the "+ New Post" button in the dashboard:
+![Screenshot of Dashboard](public/images/signup.png)
+![Screenshot of Add Post](public/images/add-post.png)
+
+You can also edit your posts in the dashboard:
+![Screenshot of Edit Post](public/images/edit-post.png)
+
+To add comments to post, navigate to the homepage and click on the post you would like to add a comment on. You must be logged in to add a comment!
+![Screenshot of Homepage](public/images/home-screenshot.png)
+![Screenshot of Add Comment](public/images/add-comment.png)
 
 ## Questions
 For any questions, reach out to github.com/djamz919 via the following email address: djtm97@gmail.com.
